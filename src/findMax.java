@@ -10,6 +10,7 @@ public class findMax {
             }
         }
         System.out.println("The max value is " + max);
-
     }
 }
+
+//complexity: O(n)
