@@ -1,15 +1,15 @@
 class Fibonacci {
     public static void main(String[] args) {
-        Fibonacci fibonacci = new Fibonacci();
-        var result = fibonacci.fibonacci(4);
+        Fibonacci fibonacciCalculator = new Fibonacci();
+        var result = fibonacciCalculator.calculateFibonacci(4);
         System.out.println(result);
     }
 
-    public int fibonacci(int n) {
+    public int calculateFibonacci(int n) {
         if (n < 0) return -1;
-        if (n==0 || n==1){
+        if (n == 0 || n == 1) {
             return n;
         }
-        return fibonacci(n-1) + fibonacci(n-2);
+        return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
     }
 }
